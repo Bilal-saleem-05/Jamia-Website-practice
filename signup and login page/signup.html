@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpForm</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+
+        
+    </header>
+        
+    <div class="container">
+        <div class="head">
+            <h1>Registration form</h1>
+        </div>
+        
+        <form action="https://www.example.com">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter full Name" name="fullName" required>
+            <br>
+             
+            <label for="Select Class" aria-required="true">Selec Class</label>
+            <select name="Select class" id="" >
+                <Option>Nursery</Option>
+                <Option>KG 1</Option>
+                <Option>KG 2</Option>
+                <Option>Class 1</Option>
+                <Option>Class 2</Option>
+                <Option>Class 3</Option>
+                <Option>Class 4</Option>
+                <Option>Class 5</Option>
+            </select>
+            <BR></BR>
+
+            <label for="Gender"required>Gender: </label> 
+            <input type="radio" id="radio"  name="Gender" required>MALE
+            <input type="radio" id="radio" name="Gender" required>FEMALE
+            <br><br>
+
+            <label for="Mobile No." required>whatsapp No.(+92):</label> 
+            <input type="number" id="Mobile No." name="Mobile No." placeholder="+923xxxxxxxxxx" maxlength="10" required>
+            <br><br>
+            <label for="email" required>E-Mail:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email" required>
+            <br>
+            <label for="password" >Password:</label> 
+            <input type="password" id="password" placeholder="At least 10 characters" maxlength="10" required>
+            
+            <label for="Reenter password" required>Reenter Password:</label> 
+            <input type="password" id="password" placeholder="Reenter Password" maxlength="10" required>
+             
+        
+            <button type="submit">SUBMIT</button>
+        </form>
+        <br>
+        Already have an account? <a href="Login.html">SignUp</a>
+    </div>
+</body>
+</html>
