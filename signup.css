@@ -1,82 +1,234 @@
-body{
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-*{
-    font size: 12px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.head{
-    margin-top: 40px;
-    width: 300px;
-    text-align: center;
-    background-color: #0073e6; /* Blue color */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 240, 248);
+}
+header {
+    border-radius: 20px;
+    width: 90%;
+    /* position: fixed;
+    top: 20px; */
+       background-color: cadetblue;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border-radius: 10px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+   
+    
+}
+nav img {
+    width: 90px;
+    height:80%;
+    margin-left: 2%;
+    border-radius: 15px;
+    border: 3px solid wheat;
+
 }
 
-.container{
-    width: 450px;
-    border: 3px solid #0073e6; /* Blue border */
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white; /* White background */
-    border-radius: 10px;
+.menu {
+    display: flex;
+    gap: 60px;
+
+}
+.menu li{
+    list-style:none;
+    position: relative;
 }
 
-label {
-    color: #0073e6; /* Blue text for labels */
+.menu li a{
+    text-decoration:none;
+    color:white;
+
+    position:relative;
+
+    padding-bottom:2px;
+
+    transition:.3s;
 }
+.menu li a::after{
 
+    content:"";
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%; /* Makes all input boxes the same width */
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 2px solid #0073e6; /* Blue border */
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+    height:2px;
+
+    background:white;
+
+    transition:.35s ease;
 }
+.menu li a:hover::after{
 
-button{
+    width:100%;
+
+}
+.sub_menu{
+
+    position: absolute;
+    top: 120%;
+    left: 0;
+
+    width: 240px;
+
+    background: cadetblue;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s ease;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+
+}
+.sub_menu li{
+
+    width: 100%;
+
+}
+.sub_menu li a{
+
     display: block;
-    margin: 20px auto;
-    background-color: #0073e6; /* Blue background */
+   text-align: center;
+    padding: 15px;
+
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #005bb5; /* Darker blue on hover */
-}
-select {
-    width: 70%;
-    text-align: center;
-    margin-left: 2px;
-    padding: 5px;
-}
-select option {
-    border: 2px solid transparent;
-    background-color: none;
-}
-select option:hover {
-    border: 2px solid black;
-}
-a {
-    color: #0073e6; /* Blue link color */
     text-decoration: none;
+
+    font-size: 25px;
+
+    transition: .3s;
+
+}
+.sub_menu li a:hover{
+
+    background: #4b8a8c;
+
+    padding-left: 25px;
+
+}
+.menu li:hover .sub_menu{
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+.SignUpbtn{
+    margin-right:2%;
+    padding:15px;
+    text-decoration:none;
+    width:10em;
+    height:5ex;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:gold;
+    color:black;
+
+    border:2px solid firebrick;
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.35s ease;
+}
+.SignUpbtn:hover{
+    background-color: bisque;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.25);
 }
 
-a:hover {
-    text-decoration: underline;
+                                        /* NAVBAR DESIGN COMPLETED HERE */
+
+.Registration-container {
+    width: 90%;
+    height: 40rem;
+    background-color: #e8e8e4;
+    margin: 45px;
+    padding: 30px;
+
+}
+.head{
+   padding: 15px 0;
+    width: 100%;
+    height: 250px;
+    background-color: #03045e;
+    color: white;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto 15px;
+}
+.head img {
+    width: 120px;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 10px;
+}    
+.REG-HEAD-HEADINGS {
+    width: 50%;
+    /* height: 200px;  */
+    text-align: center;
+    border: 1px solid white;
+}
+.REG-HEAD-HEADINGS h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.REG-HEAD-HEADINGS h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: gold;
+}
+.Profile_image_container {
+    width: 10%;
+    height: 80%;
+    border: 1px solid white;
+    text-align: center;
+    background-color: white;
+    color: black;
+    /* font-weight: 900; */
+
+}
+.head-para-1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.profile_frame img {
+    width: 60%;
+    height: 120%; 
+    /* background-color: wheat; */
+    /* background-image: url("/Jamia-Website-practice/profile.png"); */
+    background-size: cover;
+    /* background-color: wheat; */
 }
