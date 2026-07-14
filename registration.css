@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: fantasy; */
+}
+body {
+   background-color: #eef8ff; 
+   padding: 40px;
+   
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    padding: 15px 0;
+    border-radius: 15px;
+    max-width: 1200px ;
+    background-color: #0b3b91;
+    color: white;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 100;
+}
+h1 {font-size: 46px;}
+h2 {font-size: 35px; color: gold;}
+
+.registration_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 89, 255);
+    /* text-align: center; */
+}
+.registration_form_row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+}
+
+.field label{
+    margin: 18px 0 8px;
+}
+
+.field input,
+.field select{
+    width:100%;
+    height:40px;
+    text-align: center;
+}
+
+.photograph{
+    margin-top: 18px;
+    width: 80px;
+    height: 80px;
+    background-image: url("Jamia-Website-practice/profile1.png");
+    background-size: contain;
+}
+
+button {
+     background-color: #0b3b91;
+     color: white;
+     width: 40%;
+     height: auto;
+     padding: 14px;
+     margin: 15px 30% 15px;
+     cursor: pointer;
+}
+@media (max-width:900px){
+
+body{
+    padding:20px;
+}
+
+.registration_container{
+    padding:20px;
+}
+
+.registration_form_row{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:34px;
+}
+
+header h2{
+    font-size:26px;
+}
+
+header h3{
+    font-size:18px;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+     margin: 15px 30% 15px;   
+}
+
+}

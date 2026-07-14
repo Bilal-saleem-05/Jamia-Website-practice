@@ -117,7 +117,7 @@ nav img {
     transition: .3s;
 
 }
-.sub_menu li a:hover{
+.sub_menu li a:active{
 
     background: #4b8a8c;
 
