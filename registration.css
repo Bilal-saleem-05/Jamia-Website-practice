@@ -59,18 +59,22 @@ h2 {font-size: 35px; color: gold;}
     margin-top: 18px;
     width: 80px;
     height: 80px;
-    background-image: url("Jamia-Website-practice/profile1.png");
+    background-image: url("./profile1.png");
     background-size: contain;
 }
 
-button {
-     background-color: #0b3b91;
-     color: white;
+button a{
+     /* background-color: #0b3b91; */
+     /* color: white; */
      width: 40%;
      height: auto;
      padding: 14px;
      margin: 15px 30% 15px;
      cursor: pointer;
+}
+button a {
+    color: white;
+    text-decoration: none;
 }
 @media (max-width:900px){
 
