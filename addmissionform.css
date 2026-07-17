@@ -1,0 +1,89 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,Arial,sans-serif;
+}
+
+body{
+background:#eef8ff;
+padding:40px;
+color:#333;
+}
+header {
+   max-width:1200px;
+    margin:  auto;
+    background-color: #0b3b91;
+    text-align: center;
+    color:  white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+header hq {font-size: 42px;}
+header h2 {color: gold; margin-top: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.student-info {
+   max-width: 1200px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.student-info h2{
+margin-bottom:25px;
+color:#0b3b91;
+border-left:6px solid #0b3b91;
+padding-left:12px;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.field label {
+     font-weight: 600;
+     margin-bottom: 8px;
+}
+.field input, 
+.field select {
+    height: 40px;
+    padding: 5px 10px;
+    border:  1px solid #c8d0da;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 25s;
+}
+.field input:focus,
+.field select:focus {
+    border: #0b3b91;
+    box-shadow:0 0 0 3px rgba(11,59,145,.15);
+}
+
+
+@media  (max-width: 900px){
+.row {
+    grid-template-columns: 1fr;
+}
+body{
+    padding: 15px;
+}
+header h1{
+font-size:30px;
+}  
+}
+
